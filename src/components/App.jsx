@@ -6,11 +6,12 @@ import friends from "./friendsList/friends"
 import { FriendsList } from './friendsList/FriendsList';
 import transactions from "./transactionsHistory/transactions"
 import { TransactionList } from './transactionsHistory/TransactionsList';
+import { MainContainer } from './Base.styled';
 
 
 export const App = () => {
   return (
-    <div>    
+    <MainContainer>    
  
         <User user={user} />   
 
@@ -20,6 +21,6 @@ export const App = () => {
       
         <TransactionList transactions={transactions}/>
     
-    </div>
+    </MainContainer>
   );
 };

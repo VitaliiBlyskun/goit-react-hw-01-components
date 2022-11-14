@@ -12,7 +12,6 @@ border-radius: 15px;
 
 margin-right: auto;
 margin-left: auto;
-margin-bottom: 100px;
 `
 
 

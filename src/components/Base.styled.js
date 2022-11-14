@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const MainContainer =  styled.div`
+    padding: 10px;
+    border: 3px solid ${props => props.theme.colors.blue};
+    border-radius: 10px;
+`
+
 export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
