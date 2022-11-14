@@ -2,14 +2,15 @@ import { Statistics } from './Statistics';
 import { Wrapper, Container } from '../Base.styled';
 import { Title, StatsList } from './Statistics.styled';
 
-export const StatisticsList = ({ data }) => {
+
+export const StatisticsList = ({ title, stats }) => {
   return (
     <Wrapper>
       <Container>
-        <Title>Upload stats</Title>
+        {title && <Title>Upload stats</Title>}
         <StatsList>
-          {data.map(data => (
-              <Statistics key={data.id} data={data} />
+          {stats.map(stats => (
+              <Statistics key={stats.id} stats={stats} />
           ))}
         </StatsList>
       </Container>
