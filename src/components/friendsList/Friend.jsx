@@ -18,17 +18,3 @@ Friend.propTypes = {
     isOnline: PropTypes.bool.isRequired,
   }),
 };
-
-
-
-// {/* <li class="item">
-//   <span class="status"></span>
-//   <img class="avatar" src="" alt="User avatar" width="48" />
-//   <p class="name"></p>
-// </li> */}
-
-// {/* <ul class="friend-list">
-//   <!-- Довільна кіл-сть FriendListItem -->
-// </ul> */}
-
-// BsFillCircleFill

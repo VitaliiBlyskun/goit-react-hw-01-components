@@ -5,27 +5,12 @@ export const FriendsList = ({ friends }) => {
   return (
     <Wrapper>
       <Container>
-        <ul>
+        <ul key={friends.id}>
           {friends.map(friends => (
-            <li key={friends.id}>
               <Friend friends={friends} />
-            </li>
           ))}
         </ul>
       </Container>
     </Wrapper>
   );
 };
-
-// export const StatisticsList = ( {data} ) => {
-//     return <div>
-//     <h2>Upload stats</h2>
-//     <ul>
-//         {data.map(data => (
-//         <li key={data.id}>
-//             <Statistics data={data}/>
-//         </li>
-//         ))}
-//     </ul>
-//     </div>
-// }
